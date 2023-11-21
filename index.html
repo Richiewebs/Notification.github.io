@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div id="header">
+  <h4> Notifications <span style="width: 70px; background:hsl(219, 85%, 26%) ; margin-left: 5px; border-radius: 6px; padding: 3px 10px; color: white;" id="num">3</span> </h4>
+
+ <span id="hd"> Mark all as read</span>
+  </div>
+      <div id="down">
+      <div class ="unread" id="del">
+        <img src="avatar-mark-webber.webp" width="40" height="40" ><div class="image"> <span style="font-weight: 800;">Mark Webber</span>  reacted to your recent post <b>My first tournament today!</b> <span class="dot" id="dot1"></span>
+      1m ago</div>
+    </div>
+
+        <div class ="unread" id="del2">
+    <img src="avatar-angela-gray.webp" alt="" width="40"> <div class="image"> <span style="font-weight: 800;">Angela Gray </span>   followed you <span class="dot" id="dot2"></span><br> 
+          5m ago</div>
+        </div>
+
+    <div class ="unread" id="del3">
+      <img src="avatar-jacob-thompson.webp" alt="" width="40"><div class="image"><span style="font-weight: 800;"> Jacob Thompson</span>  has joined your group <span style="font-weight: 800; color:hsl(219, 85%, 26%) ;">Chess Club</span><span class="dot" id="dot3"></span> <br>
+      1 day ago</div>
+    </div>
+    
+
+    <div class="read">
+
+  <img src="avatar-rizky-hasanuddin.webp" alt="" width="40"><div class="image"><span style="font-weight: 800;"> Rizky Hasanuddin</span>  sent you a private message
+  <br>5 days ago</div>
+</div>
+    <div id="message">
+      Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+      I'm already having lots of fun and improving my game.
+    </div>
+
+  <div class="read pic">  
+  <img src="avatar-kimberly-smith.webp" alt="" width="40"><div class="image"><span style="font-weight: 800;">Kimberly Smith</span>  commented on your picture
+  <br>1 week ago</div><img src="image-chess.webp" alt="" width="40">
+</div>
+
+<div class="read">
+ <img src="avatar-nathan-peterson.webp" alt="" width="40" height="40"> <div class="image"><span style="font-weight: 800;"> Nathan Peterson</span>  reacted to your recent post 5 end-game strategies to increase your win rate
+  <br> 2 weeks ago</div>
+</div>
+
+
+<div class="read">
+ <img src="avatar-anna-kim.webp" alt="" width="40"><div class="image"><span style="font-weight:800 ; "> Anna Kim </span> left the group <span style="color:hsl(219, 85%, 26%); font-weight:800;"> Chess Club </span>
+  <br> 2 weeks ago</div>
+</div>
+</div> 
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Richelle Asmah</a>.
+  </div>
+
+  <script>
+  document.getElementById("hd").addEventListener("click",function clear(){
+      document.getElementById("del").style.background="transparent";
+      document.getElementById("del2").style.background="transparent";
+      document.getElementById("del3").style.background="transparent";
+      document.getElementById("dot1").style.background="transparent";
+      document.getElementById("dot2").style.background="transparent";
+      document.getElementById("dot3").style.background="transparent";
+      document.getElementById("num").textContent = 0;
+      
+  })
+
+
+
+  </script>
+</body>
+</html>

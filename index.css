@@ -1,0 +1,151 @@
+
+@import url('https://fonts.google.com/specimen/Plus+Jakarta+Sans');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(240, 239, 239);
+    font-family: "Plus Jakarta Sans" ;
+    font-size: 16px;
+}
+
+.container{
+    width: 52%;
+    min-height: 90vh;
+    background-color: white;
+    box-shadow: 5px 10px 10px 10px rgba(165, 163, 163, 0.3) ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+div{
+     
+    margin: 0 20px;
+    margin-left: 20px;
+    width: 620px;
+    
+}
+
+img{
+    margin-top: 10px;
+}
+
+#header{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+#down{
+    margin-top: 20px;
+}
+
+#header span{
+    justify-content: flex-end;
+}
+
+.dot{
+    padding: 0 4px;
+    border-radius: 50%;
+    background: hsl(1, 90%, 64%);
+    font-size: 7px;
+    margin-left: 4px;
+}
+
+.unread{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px 0 0;
+    background: hsl(211, 68%, 94%);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.read{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px 20px 0;
+}
+
+.image{
+    flex-wrap: wrap;
+    
+}
+
+#message{
+    padding: 10px;
+    border: 1px solid hsl(220, 5%, 62%);
+    width: 540px;
+    border-radius: 6px;
+    margin-left: 60px;
+}
+
+.read.pic{
+    justify-content: space-between;
+}
+
+
+@media (max-width:799px){
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+       
+    }
+
+    body{
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    div{
+        width: 95%;
+        margin-top: 15px;
+        
+    }
+
+    img{
+        height: 40px;
+    }
+    #message{
+        width: 80%;
+    }
+}
+
+@media (min-width:800px){
+    .container{
+            width:52%;
+            min-height: 80vh;
+    }
+    #header{
+        margin-top: 30px;
+    }
+    div{
+        width: 96%;
+        margin-top:15px ;
+       
+       
+    }
+
+    #message{
+        width:80%;
+    }
+}
